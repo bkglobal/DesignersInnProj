@@ -4,11 +4,21 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomeComponent } from './components/home/home.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { TimelineComponent } from './components/timeline/timeline.component';
+import { DetailComponent } from './components/detail/detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent,
+    DashboardComponent,
+    ProfileComponent,
+    TimelineComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
