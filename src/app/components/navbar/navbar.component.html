@@ -1,13 +1,31 @@
-<nav class="white" role="navigation">
-  <div class="nav-wrapper container">
-    <a id="logo-container" href="#" class="brand-logo">Logo</a>
-    <ul class="right hide-on-med-and-down">
-      <li><a href="#">Navbar Link</a></li>
-    </ul>
+<div class="navbar-fixed">
+  <nav class="teal lighten-2" role="navigation">
+    <div class="nav-wrapper custom-nav">
+      <a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a [routerLink]="['/login']"
+          [routerLinkActive]="['active']"><i class="material-icons right">view_module</i>Login</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Timeline</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Dashboard</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li ><a href="/">Home</a></li>
+      </ul>
+     
+     
+     
+    
 
-    <ul id="nav-mobile" class="sidenav">
-      <li><a href="#">Navbar Link</a></li>
-    </ul>
-    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-  </div>
-</nav>
+  
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Home</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+</div>
+

@@ -2,6 +2,25 @@
 @import "assets/css/style.scss";
 
 
+.globalStyleRouerOutlet{
+    margin-top: 64px;
+}
+
+.prev-arrow{
+    position: absolute;
+    z-index: 1;
+    top:130px;
+    border: 0px solid;
+    left:0;
+}
+
+.next-arrow{
+    position: absolute;
+    z-index: 1;
+    top:130px;
+    border: 0px solid;
+    right:0;
+}
 // body {
 //     background-image: url('/assets/images/background3.jpg');
      

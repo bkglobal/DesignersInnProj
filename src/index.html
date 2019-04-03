@@ -11,12 +11,50 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
   <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
   <script src="assets/js/materialize.js"></script>
   <script src="assets/js/init.js"></script>
+  <script src= "assets/plugins/slick/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick-theme.css">
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+
+      $(document).ready(function(){
+        $('.carousel').carousel();
+      
+      $('.uneven').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" data-role="none" class="prev-arrow teal lighten-1 btn"><i class="material-icons">navigate_before</i></button>',
+ 
+
+  // next arrow
+        nextArrow: '<button type="button" data-role="none" class="next-arrow teal lighten-1 btn"><i class="material-icons">navigate_next</i></button>'
+      });
+      });
+
+     
+          
+     </script>
+
+
+
+
 
 </head>
 <body>
   <app-root></app-root>
+ 
+
+    
+  
 </body>
 </html>

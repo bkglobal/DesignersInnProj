@@ -31,8 +31,8 @@
               "node_modules/materialize-css/sass/materialize.scss"
             ],
             "scripts": [
-              "node_modules/materialize-css/js/sidenav.js"
-
+              "node_modules/materialize-css/js/sidenav.js",
+              "node_modules/materialize-css/js/carousel.js"
             ],
             "es5BrowserSupport": true
           },
