@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CrudService } from '../../services/crud/crud.service';
+import { CrudService } from '../../../services/crud/crud.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -11,8 +11,20 @@ export class DashboardComponent implements OnInit {
   constructor(private crud: CrudService) { }
 
   ngOnInit() {
+    this.init();
+  }
+
+  init() {
     this.crud.fetch('select * from users').subscribe((res) => {
-      console.log(res);
+      this.users = res;
+    });
+  }
+
+
+  removeUser(id) {
+    this.crud.cud('delete from users where id = ' + id).subscribe((res) => {
+      console.log('deleted');
+      this.init();
     });
   }
 

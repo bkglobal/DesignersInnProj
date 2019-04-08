@@ -1,0 +1,58 @@
+
+
+
+ <div class="row">
+    <div class="col s12 m12">
+      <div class="card">
+        <div class="card-content ">
+          <span class="card-title">Manage User</span>
+          <table>
+              <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>City</th>
+                    <th>Country</th>
+                    <th>Block</th>
+                    <th>Remove</th>
+                
+                </tr>
+              </thead>
+        
+              <tbody>
+                <tr *ngFor="let user of users;">
+                  <td>{{user.username}}</td>
+                  <td>{{user.password}}</td>
+                  <td>{{user.email}}</td>
+                  <td>{{user.contact}}</td>
+                  <td>{{user.city}}</td>
+                  <td>{{user.country}}</td>
+                  <td><div class="switch">
+                      <label>
+                        Block
+                        <input type="checkbox" [checked]="user.isBlocked == 0">
+                        <span class="lever"></span>
+                        Unblock
+                      </label>
+                    </div>
+                  </td>
+                  <td style="text-align: center; cursor: pointer;" (click)="removeUser(user.id)"> <i class="Medium material-icons">delete_forever</i></td>
+        
+                </tr>
+              
+              </tbody>
+            </table>
+        </div>
+        <!-- <div class="card-action">
+          <a href="#">This is a link</a>
+          <a href="#">This is a link</a>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+
+    
+   
