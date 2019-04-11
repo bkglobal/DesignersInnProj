@@ -32,7 +32,8 @@
             ],
             "scripts": [
               "node_modules/materialize-css/js/sidenav.js",
-              "node_modules/materialize-css/js/carousel.js"
+              "node_modules/materialize-css/js/carousel.js",
+              "node_modules/materialize-css/js/collapsible.js"
             ],
             "es5BrowserSupport": true
           },
